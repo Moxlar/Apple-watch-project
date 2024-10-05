@@ -2,6 +2,7 @@
 :root{
     --primary: #EA625C;
     --text-color: #333;
+    --primary-dark:#C9514C;
 }
 
 /* Global */
@@ -43,6 +44,26 @@ img{
     margin-left: auto;
     margin-right: auto;
 
+}
+
+/* BUTTON */
+.button {
+    color:#fff;
+    background-color: var(--primary);
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: bold ;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 12px  38px;
+    transition: background-color 0.3s ease ;
+}
+.button:hover{
+    background-color: var (--primary-dark);
+}
+.button:active{
+    opacity: 0.6;
 }
 
 /* Main-content */
@@ -111,4 +132,50 @@ img{
     padding-bottom: 6px;
     padding-top: 6px;
     border-bottom: 1px #333 solid;
+}  
+
+   /* Hero */
+.hero {
+    padding-top : 140px;
+    padding-bottom: 183px;
+    border-bottom:2px solid #ddd;
+    background-color: #fff;
+    background-image: url("../img/intro-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: left calc(50% + 550px) bottom;
+}
+
+/* CTA */
+
+.lead-cta {
+    width: 100%;
+    max-width: 490px;
+}
+.lead-cta-heading {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 50px;
+    line-height: 1.2;
+}
+.lead-cta-text {
+    color: #777;
+    margin-top: 0;
+    margin-bottom: 30px;
+    border-left: 3px solid #000;
+    padding-left: 37px ;
+}
+
+
+/* BG RETINA */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (        min-resolution: 192dpi),
+only screen and (       min-resolution: 2dppx) { 
+   .hero {
+    background-image: url("../img/intro-bg@2x.jpg");
+     }
+
 }
