@@ -165,6 +165,89 @@ img{
     padding-left: 37px ;
 }
 
+/* FEATURE */
+.feature {
+    padding: 70px 125px;
+}
+.feature-container {
+}
+.container {
+}
+.feature-list {
+    display: flex;
+    list-style:none;
+    padding: 0;
+    margin: 0;
+}
+.feature-item {
+    width: 280px;
+    height: 253px;
+}
+.feature-item:not(:last-child){
+    margin-right: 80px;
+}
+.feature-heading {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #222;
+    text-transform: uppercase;
+}
+.feature-text {
+    margin-top: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.features-divider{
+width: 8px;
+height: 8px;
+margin: 0;
+bottom: 0;
+background-color: #ddd;
+box-shadow: 16px 0 0 0 #ddd,
+32px 0 0 0 #ddd;
+}
+
+/* Button */
+.lined-link{
+    display: inline-flex;
+    align-items: center;
+    color:var(--primary);
+    font-size: 16px;
+    line-height: 1.6;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+.lined-link::before{
+    width: 40px;
+    height: 3px;
+    background-color:var(--primary);
+    content: "";
+    margin-right: 10px;
+    transition: width 0.3s ease;
+}
+.lined-link:hover::before{
+    width: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* BG RETINA */
 @media
