@@ -250,7 +250,7 @@ box-shadow: 16px 0 0 0 #ddd,
 }
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items:center;
 }
 
